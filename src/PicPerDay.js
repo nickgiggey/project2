@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 function PicPerDay() {
-    const [currentPic, setCurrentPic] = useState(null);
+    const [currentPic, setCurrentPic] = useState('');
     const processing = {
         key: process.env.REACT_APP_NASA_KEY,
     };
@@ -14,10 +14,10 @@ function PicPerDay() {
             .then(response => {
                 console.log(response)
                 setCurrentPic(response);
-                console.log(currentPic)
             })
             .catch((err) => console.log(err));
     }
+    if(!currentPic) return <div />
     return (
         <div className="pic-container">
             {currentPic && (
