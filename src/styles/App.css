@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+
+html {
+  background-color: #5f92ffad;
+  height: 1500px;
+}
+
+.nav-container {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), rgba(0, 0, 0, 0.55) url(images/3YOpz5.jpeg);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 500;
+  border-bottom: 4px solid #5f91ff;
+  position: fixed;
+  box-shadow: 0 2px 15px #699bff;
+}
+
+.link {
+  align-items: center;
+  font-size: 1.5rem;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 10px;
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+.link-container {
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  color: white;
+  font-size: 35px;
+  padding-right: 5px;
+  /* font-family: 'Righteous', cursive; */
+  font-family: 'Josefin Slab', serif;
+}
+
+/* Shooting Stars inspired by https://codepen.io/webdevshorts/pen/xmGbBX */
+.sky-container {
+  transform: rotateZ(45deg);
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  height: 2px;
+  background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+  filter: drop-shadow(0 0 6px #699bff);
+  animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+
+.star::before, .star::after {
+  position: absolute;
+  content: '';
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 3000ms ease-in-out infinite;
+}
+
+.star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.star:nth-child(1) {
+  top: calc(100% - 200px);
+  left: calc(10% - 100px);
+  animation-delay: 6650ms;
+}
+
+.star:nth-child(1)::before, .star:nth-child(1)::after {
+  animation-delay: 6650ms;
+}
+
+.star:nth-child(2) {
+  top: calc(60% - 150px);
+  left: calc(40% - 200px);
+  animation-delay: 10550ms;
+}
+
+.star:nth-child(2)::before, .star:nth-child(2)::after {
+  animation-delay: 10550ms;
+}
+
+.star:nth-child(3) {
+  top: calc(20% - 0px);
+  left: calc(90% - 400px);
+  animation-delay: 1000ms;
+}
+
+.star:nth-child(3)::before, .star:nth-child(3)::after {
+  animation-delay: 1000ms;
+}
+
+.star:nth-child(4) {
+  top: calc(50% - -350px);
+  left: calc(50% - 650px);
+  animation-delay: 4700ms;
+}
+
+.star:nth-child(4)::before, .star:nth-child(4)::after {
+  animation-delay: 4700ms;
+}
+
+.star:nth-child(5) {
+  top: calc(50% - 500px);
+  left: calc(50% - -220px);
+  animation-delay: 3200ms;
+}
+
+.star:nth-child(5)::before, .star:nth-child(5)::after {
+  animation-delay: 3200ms;
+}
+
+/* Animations */
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 100px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 30px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(320px);
+  }
+}

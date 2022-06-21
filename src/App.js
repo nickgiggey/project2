@@ -1,21 +1,45 @@
-import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
-import Library from './Library';
-import Home from './Home';
-import PicPerDay from './PicPerDay';
-import logo from './nasa-logo.png';
-import NotFound from './NotFound';
+import Library from './components/Library';
+import Home from './components/Home';
+import PicPerDay from './components/PicPerDay';
+import NotFound from './components/NotFound';
+import logo from './styles/images/2120445.png';
+import './styles/reset.css';
+import './styles/App.css';
 
-const App = () => {
+function App() {
+  const logoStyle = {
+    width: 6 + "vmax",
+    height: "auto",
+    padding: 10 + "px",
+  };
   return (
-    <div>
-      <nav>
-        <Link to='/'>
-          <img src={logo} alt='' />
-        </Link>
-        <Link to='/library'>
-          <h2>Picture Library</h2>
-        </Link>
+    <section className="main-container">
+      <nav className="nav-container">
+        <div className="logo-container">
+          <h1 className="logo-title">The Observatory</h1>
+          <Link to='/'>
+            <img src={logo} alt='' style={logoStyle} />
+          </Link>
+        </div>
+        <div className="sky-container">
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+        </div>
+        <ul className="link-container">
+          <Link to='/other1'>
+            <li className="link other1-link">Other1</li>
+          </Link>
+          <Link to='/library'>
+            <li className="link pic-lib-link">Picture Library</li>
+          </Link>
+          <Link to='/other2'>
+            <li className="link other2-link">Other2</li>
+          </Link>
+        </ul>
       </nav>
       <main>
         <Routes>
@@ -25,7 +49,7 @@ const App = () => {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
-    </div>
+    </section>
   );
 };
 

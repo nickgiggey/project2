@@ -1,0 +1,23 @@
+.header-container {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-top: 200px;
+    box-shadow: 5px 10px 18px lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-clip: content-box;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.header-text {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid lightgrey;
+    padding: 10px;
+    box-shadow: 5px 10px 18px lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-clip: content-box;
+    background-color: rgba(255, 255, 255, 0.75);
+}
