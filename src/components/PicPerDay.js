@@ -47,10 +47,9 @@ function PicPerDay() {
             {currentPic && (
                 <article className="pic pic-container-inner" style={apiStyleContainer}>
                     <header className="pic pic-header" style={apiStyleContainer}>
-
                         {currentPic.title} - <i>{currentPic.date}</i>
                     </header>
-                    <img src={currentPic.hdurl} alt="APOD" width="400" height="auto" className="pic-image" />
+                    <img src={currentPic.hdurl} alt="APOD" width="450" height="auto" className="pic-image" />
                     <p className="pic pic-explanation" style={apiStyleExplanation}>{currentPic.explanation}</p>
                 </article>
             )}

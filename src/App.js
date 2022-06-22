@@ -1,11 +1,11 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import './styles/reset.css';
+import './styles/App.css';
 import Library from './components/Library';
 import Home from './components/Home';
 import PicPerDay from './components/PicPerDay';
 import NotFound from './components/NotFound';
 import logo from './styles/images/2120445.png';
-import './styles/reset.css';
-import './styles/App.css';
 
 function App() {
   const logoStyle = {
@@ -34,7 +34,7 @@ function App() {
             <li className="link other1-link">Other1</li>
           </Link>
           <Link to='/library'>
-            <li className="link pic-lib-link">Picture Library</li>
+            <li className="link pic-lib-link">Earth Library</li>
           </Link>
           <Link to='/other2'>
             <li className="link other2-link">Other2</li>
