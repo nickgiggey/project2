@@ -30,14 +30,8 @@ function App() {
           <div className="star"></div>
         </div>
         <ul className="link-container">
-          <Link to='/other1'>
-            <li className="link other1-link">Other1</li>
-          </Link>
           <Link to='/library'>
             <li className="link pic-lib-link">Earth Library</li>
-          </Link>
-          <Link to='/other2'>
-            <li className="link other2-link">Other2</li>
           </Link>
         </ul>
       </nav>
