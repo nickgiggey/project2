@@ -1,5 +1,6 @@
 # Hello and welcome to The Observatory
-![Screenshot](/project2/src/styles/images/Screen Shot 2022-06-24 at 3.58.27 PM.png "")
+<img width="2038" alt="Screen Shot 2022-06-24 at 3 58 27 PM" src="https://user-images.githubusercontent.com/98715710/175699049-afff3ee9-6ddc-4866-b24a-5c3404411269.png">
+
 
 Here you will find some of the latest pictures and information direct from NASA's database. To access the website direct from Github, please follow the instructions below.
 
