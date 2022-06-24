@@ -16,7 +16,7 @@ Within your terminal, enter 'git clone' followed by the link you copied and then
 In your terminal, you will need to install the following dependencies:
 
 - `npm install`
-- `react-router-dom`
+- `npm i react-router-dom`
 
 ### `npm start`
 
