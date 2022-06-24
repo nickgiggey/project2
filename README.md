@@ -34,6 +34,7 @@ The page will reload when you make changes.
 
 If you would like to add any contributes, simply 'fork' the project on the Github page by clicking on the `fork` link in the upper right. From there, follow the steps above starting with copying the `code` link. Please feel free to identify any bugs, propose improvements, and if you have any additional questions or recommendations, please feel free to contact me at nickgiggey@comcast.net.
 
-Credits:
-#### Shooting Stars inspired by [CodePen](https://codepen.io/webdevshorts/pen/xmGbBX) ####
-#### NASA's API located at [NASA API](https://api.nasa.gov/) ####
+### Credits: ###
+
+- Shooting Stars inspired by [CodePen](https://codepen.io/webdevshorts/pen/xmGbBX) ####
+- NASA's API located at [NASA API](https://api.nasa.gov/) ####
