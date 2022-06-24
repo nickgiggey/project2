@@ -36,5 +36,5 @@ If you would like to add any contributes, simply 'fork' the project on the Githu
 
 ### Credits: ###
 
-- Shooting Stars inspired by [CodePen](https://codepen.io/webdevshorts/pen/xmGbBX) ####
-- NASA's API located at [NASA API](https://api.nasa.gov/) ####
+- Shooting Stars inspired by [CodePen](https://codepen.io/webdevshorts/pen/xmGbBX)
+- NASA's API located at [NASA API](https://api.nasa.gov/)
