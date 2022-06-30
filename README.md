@@ -13,7 +13,7 @@ Follow the [Github Link](https://github.com/nickgiggey/project2) and click on th
 
 Within your terminal, enter 'git clone' followed by the link you copied and then press 'enter'.
 
-### Install Dependencies/Technologies Used:
+### Install Dependencies:
 
 In your terminal, you will need to install the following dependencies:
 
