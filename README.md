@@ -27,6 +27,12 @@ Runs the app in the development mode.
 
 The page will reload when you make changes.
 
+### Technologies Used:
+
+- React
+- React Router 
+- NASA Apod API
+
 ## Features and Description:
 
 - Upon loading the home page, you will be greeted with the most recent "picture of the day" direct from NASA's database.
